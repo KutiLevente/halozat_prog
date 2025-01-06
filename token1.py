@@ -6,3 +6,4 @@ head ["Accept"] = "application/json"
 head ["Authorization"] = "Bearor{token}"
 r = requests.get(url, headers=head)
 print(r.status_code)
+print(r.text)
