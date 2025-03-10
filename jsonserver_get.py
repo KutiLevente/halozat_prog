@@ -4,6 +4,6 @@ try:
 except:
 	print("Hiba")
 	exit
-print(reply.json())
+#print(reply.json())
 print(reply.status_code)
 
