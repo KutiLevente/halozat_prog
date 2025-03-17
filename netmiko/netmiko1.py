@@ -2,13 +2,13 @@ from netmiko import ConnectHandler
 from getpass import getpass
 
 kapcs={
-	"device_type":"mikrotik_routeros",
-	"host":"172.17.255.195",
+	"device_type":"cisco_ios",
+	"host":"172.19.255.216",
 	"username":"admin",
-	"password":getpass()
+	"password":"admin"
 }
 
-cmd="/ip address print"
+cmd="show ip int brief"
 
 with ConnectHandler(**kapcs) as k:
 	out=k.send_command(cmd)
